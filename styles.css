@@ -1,0 +1,264 @@
+/* Global Styles */
+html, body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+    scroll-behavior: smooth;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px;
+    padding: 60px 20px
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: 70px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile-Friendly Navbar */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+    }
+}
+
+/* Sections */
+.section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 10em;
+    font-weight: 600;
+    margin: 0;
+    /* background: -webkit-linear-gradient(
+        to right, 
+        rgb(250, 78, 10), 
+        rgb(247, 12, 204), 
+        rgb(0, 106, 255), 
+        rgb(48, 248, 255), 
+        rgb(250, 78, 10),
+    );
+    background-clip: text;
+    color: transparent;
+    background-size: 200%; */
+}
+
+
+.colour-hover {
+    color: #000;
+    transition: 1.5s;
+}
+
+.colour-hover:hover {
+    color: rgb(255, 146, 182);
+}
+
+svg {
+    fill: blue;
+}
+
+h2 {
+    font-size: 6em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.intro {
+    font-size: 2em;
+    font-weight: 400;
+    text-align: right;
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.description {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.text {
+    max-width: 400px;
+}
+
+.images {
+    display: flex;
+    gap: 20px;
+}
+
+.images img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.black-logo {
+    color: #000;
+}
+
+/* Navbar Hide on Scroll */
+.hidden {
+    transform: translateY(-100%);
+}
+
+#typing-text {
+    font-size: 1.5em;
+    font-weight: 400;
+    border-right: 3px solid black; /* Cursor effect */
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blinkCursor 0.8s infinite; /* Add blinking animation */
+}
+
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Cards for Project section */
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #000;
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.card-text {
+    float: left;
+    width: 40%;
+    margin-right: 40px;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+.card-image {
+    float: right;
+    display: flex;
+    margin-left: 20px;
+}
+
+.card-image img {
+    width: 570px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+    object-fit: cover;
+}
+  
+.learn-more {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.year {
+    font-weight: 700;
+}
+  
+p {
+    text-align: justify;
+}
