@@ -183,6 +183,11 @@ p {
 .social-icons img {
     width: 30px;
     cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
 }
 
 .black-logo {
@@ -219,6 +224,11 @@ p {
     margin-top: 30px;
     padding: 40px;
     border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
 }
 
 .card-text {
@@ -253,6 +263,13 @@ h3 {
     padding: 10px 15px;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.5s;
+}
+
+.learn-more:hover {
+    background-color: white;
+    border: solid 1px #000;
+    color: black;
 }
 
 .year {
@@ -261,4 +278,10 @@ h3 {
   
 p {
     text-align: justify;
+}
+
+/* footer */
+.footer {
+    margin-left: 30px;
+    margin-bottom: 10px;
 }
