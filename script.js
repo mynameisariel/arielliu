@@ -21,7 +21,7 @@ function scrollToSection(id) {
 
 // typewriting effect
 document.addEventListener("DOMContentLoaded", function () {
-    const words = ["high school student.", "aspiring engineer.", "adventurer."];
+    const words = ["student.", "engineer.", "adventurer.", "athlete."];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     typeEffect(); // Start the animation
 });
+
 
 // confetti
 (function() {
