@@ -53,20 +53,62 @@ document.addEventListener("DOMContentLoaded", function () {
     typeEffect(); // Start the animation
 });
 
+// Project filtering
+document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const projectCards = document.querySelectorAll(".projects-container .card");
 
-// confetti
-(function() {
-    const runConfetti = document.querySelector('#hs-run-on-click-run-confetti');
-    runConfetti.addEventListener('click', () => {
-      confetti({
-        particleCount: 400,
-        spread: 100,
-        origin: {
-          y: 0.6
-        }
-      });
+    filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            // Set active class on button
+            filterButtons.forEach(btn => btn.classList.remove("active"));
+            button.classList.add("active");
+
+            const filter = button.dataset.filter;
+
+            projectCards.forEach(card => {
+                const categories = card.dataset.category.split(' ');
+                if (filter === "all" || categories.includes(filter)) {
+                    card.style.display = "flex";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
     });
-  })();
+});
+
+// experience togle
+document.addEventListener("DOMContentLoaded", function () {
+    const timelineItems = document.querySelectorAll(".timeline-header");
+
+    timelineItems.forEach(item => {
+        item.addEventListener("click", () => {
+            const body = item.nextElementSibling;
+            
+            // document.querySelectorAll('.timeline-body.active').forEach(openBody => {
+            //     if (openBody !== body) openBody.classList.remove('active');
+            // });
+            body.classList.toggle("active");
+        });
+    });
+});
+
+
+// Confetti on H1 click
+document.addEventListener("DOMContentLoaded", function () {
+    const h1Header = document.querySelector("#home h1");
+
+    if (h1Header) {
+        h1Header.addEventListener("click", () => {
+            confetti({
+                particleCount: 1000,
+                spread: 150,
+                origin: { y: 0.8 }
+            });
+        });
+    }
+    });
 
 // cardstacking effect
 // function StackCards(element) {
