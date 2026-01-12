@@ -378,6 +378,24 @@ p {
     transition: background 0.25s, color 0.25s;
 }
 
+.expand-all {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid #000;
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.25s, color 0.25s;
+}
+
+.expand-all:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
 .see-more:hover {
     background: #fff;
     color: #000;
