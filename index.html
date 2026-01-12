@@ -12,12 +12,12 @@
 <body>
 
     <header id="navbar">
-        <div class="logo" onclick="scrollToSection('home')">ariel.</div>
+        <div class="logo" onclick="scrollToSection('home')"><a class="home-button" href="/index.html">ariel.</a></div>
         <nav>
             <ul>
-                <li><a href="#about">about.</a></li>
-                <li><a href="#projects">projects.</a></li>
-                <li><a href="#experience">experience.</a></li>
+                <li><a href="/about.html">about.</a></li>
+                <li><a href="/projects.html">projects.</a></li>
+                <li><a href="/experience.html">experience.</a></li>
             </ul>
         </nav>
     </header>
@@ -42,7 +42,7 @@
 
     <section id="about" class="section">
         <div class="container">
-            <h2>about me.</h2>
+            <h2 class="colour-hover" onclick="switchPage('/about.html')">about me.</h2>
             <div class="about-content">
                 <div class="description">Hello! <br>My name is Ariel.</div>
                 <div class="text">
@@ -59,96 +59,52 @@
 
     <section id="projects" class="section">
         <div class="container">
-          <h2 class="projects">projects.</h2>
-          <div class="description">some cool stuff created by me :)</div>
- 
-          <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">all</button>
-            <button class="filter-btn" data-filter="software">software</button>
-            <button class="filter-btn" data-filter="hardware">hardware</button>
-            <button class="filter-btn" data-filter="community">community</button>
-          </div>
- 
-          <div class="projects-container">
+          <h2 class="projects colour-hover" onclick="switchPage('/projects.html')">projects.</h2>
+          <div class="description">featured...</div>
 
-            <div class="card" data-category="software">
+          <div class="filter-buttons">
+            <a class="see-more" href="/projects.html">see more</a>
+          </div>
+
+          <div class="featured-grid">
+            <a class="featured-card" href="/projects.html#project-blinky-angel">
+              <div class="card-text">
+                <h3>Blinky Angel</h3>
+                <p class="year">TensorFlow • ML • Javascript</p>
+                <p>A Chrome extension that improves eye health through automated reminders and image recognition.</p>
+              </div>
+              <div class="card-image">
+                <img src="assets/blinky-angel.jpg" alt="Blinky Angel">
+              </div>
+            </a>
+
+            <a class="featured-card" href="/projects.html#project-posture-pal">
+              <div class="card-text">
+                <h3>Posture Pal</h3>
+                <p class="year">Python • Arduino • ComputerVision</p>
+                <p>A posture reminder system using CV and microcontroller firmware to alert users.</p>
+              </div>
+              <div class="card-image">
+                <img src="assets/posture-pal1.jpg" alt="Posture Pal">
+              </div>
+            </a>
+
+            <a class="featured-card" href="/projects.html#project-gold-tennis">
               <div class="card-text">
                 <h3>Gold Tennis Academy</h3>
-                <p class="year">PHP • Laravel • MySQL • Tailwind</p>
-                <p>A full-stack booking system for my personal tennis coaching business. Allows admin and customers to manage lessons, bookings, and timeslots through their personal dashboards.</p>
-                <a class="learn-more" href="https://github.com/mynameisariel/gold-tennis" target="_blank">Learn more</a>
+                <p class="year">PHP • MySQL • Tailwind</p>
+                <p>A full-stack booking system for coaches, with admin dashboards and scheduling.</p>
               </div>
               <div class="card-image">
                 <img src="assets/gold-tennis-academy.png" alt="Gold Tennis Academy">
               </div>
-            </div>
-
-            <div class="card" data-category="software">
-              <div class="card-text">
-                <h3>Geomap</h3>
-                <p class="year">HTML • CSS • Javascript</p>
-                <p>An HTML, CSS, and Javascript web app that helps IBDP Geography students study the content material through an interactive map.</p>
-                <a class="learn-more" href="https://github.com/mynameisariel/geomap" target="_blank">Learn more</a>
-              </div>
-              <div class="card-image">
-                <img src="assets/geomap-home.jpg" alt="GeoMap">
-              </div>
-            </div>
-
-            <div class="card" data-category="community">
-              <div class="card-text">
-                <h3>LazyHacks</h3>
-                <p>A 15-hour high school hackathon that took place December 2024. 80 high school hackers from 25 schools across the city, 66% beginners, 95% attendance rate, 5 workshops hosted, $2000+ in STEM swag delivered. Only the laziest hack wins.</p>
-                <a class="learn-more" href="https://lazyhacks.github.io/lazyhacks-website/#" target="_blank">Learn more</a>
-              </div>
-              <div class="card-image">
-                <img src="assets/lazyhacks.JPG" alt="LazyHacks">
-              </div>
-            </div>
- 
-            <div class="card" data-category="software">
-              <div class="card-text">
-                <h3>Planet365</h3>
-                <p class="year">Flutter • Dart</p>
-                <p>A sustainability and environmental awareness web app created with Flutter, allowing users to take small steps towards environmental activism every day.</p>
-                <a class="learn-more" href="https://github.com/mynameisariel/katy-youth-hacks-2023-planet365" target="_blank">Learn more</a>
-              </div>
-              <div class="card-image">
-                <img src="assets/planet365.png" alt="Planet365">
-              </div>
-            </div>
-
- 
-            <div class="card" data-category="software">
-              <div class="card-text">
-                <h3>Climate Sprint</h3>
-                <p class="year">Kaboom JS • Javascript</p>
-                <p>A Javascript platformer game created with the Kaboom.js library for the LunarHacks III hackathon. This game aims to address SDG #13 (Climate Action) by raising awareness of the changing climate through varying game scenarios.</p>
-                <a class="learn-more" href="https://github.com/mynameisariel/climatesprint" target="_blank">Learn more</a>
-              </div>
-              <div class="card-image">
-                <img src="assets/climate-sprint-home.jpg" alt="Climate Sprint">
-              </div>
-            </div>
-
-            <div class="card" data-category="hardware community">
-              <div class="card-text">
-                <h3>Project GARY</h3>
-                <p>A youth-led initiative to reduce plastic litter, reaching 2000+ people in the community. GARY, a bamboo and rope model of a fish-shaped garbage encourages beachgoers to dispose responsibly of their waste.</p>
-              </div>
-              <div class="card-image">
-                <img src="assets/project-gary.JPG" alt="Project Gary">
-              </div>
-            </div>
-
+            </a>
           </div>
- 
-        </div>
-        
+        </div>        
       </section>
       
 
-    <section id="experience" class="section">
+<section id="experience" class="section">
         <div class="container">
             <h2>experience.</h2>
             <div class="timeline">
@@ -156,8 +112,27 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
+                            <h3 class="timeline-title">Software Development Intern - Environment and Climate Change Canada, Ottawa</h3>
+                            <p class="year">January 2026 - Present</p>
+                        </div>
+                        <div class="timeline-body">
+                            <ul>
+                              <li>
+                                Processing and structuring large-scale climate datasets in NetCDF format by building Python data pipelines with pandas, NumPy, and xarray, enabling reliable analysis and visualization of complex scientific data.
+                              </li>
+                              <li>
+                                Developing end-to-end data visualization features by integrating Python-based data processing with a PHP and JavaScript frontend, delivering interactive maps and charts on the official ECCC website.
+                              </li>
+                            </ul>
+                        </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
                             <h3 class="timeline-title">Web Development Intern - Sharkbyte, Remote</h3>
-                            <p class="year">July 2025 - August 2025</p>
+                            <p class="year">Jul 2025 - Aug 2025</p>
                         </div>
                         <div class="timeline-body">
                             <ul>
@@ -171,6 +146,7 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>

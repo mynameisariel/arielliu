@@ -18,6 +18,11 @@ function scrollToSection(id) {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
 }
 
+// header go to page
+function switchPage(link) {
+    window.location.href = link;
+}
+
 
 // typewriting effect
 document.addEventListener("DOMContentLoaded", function () {
@@ -78,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// experience togle
+// experience toggle
 document.addEventListener("DOMContentLoaded", function () {
     const timelineItems = document.querySelectorAll(".timeline-header");
 

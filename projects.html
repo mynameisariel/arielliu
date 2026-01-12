@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+</head>
+<body>
+    <header id="navbar">
+        <div class="logo" onclick="scrollToSection('home')"><a class="home-button" href="/index.html">ariel.</a></div>
+        <nav>
+            <ul>
+                <li><a href="/about.html">about.</a></li>
+                <li><a href="/projects.html">projects.</a></li>
+                <li><a href="/experience.html">experience.</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section id="projects" class="section">
+        <div class="container">
+          <h2 class="projects">projects.</h2>
+          <div class="description">some cool stuff created by me :)</div>
+ 
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">all</button>
+            <button class="filter-btn" data-filter="software">software</button>
+            <button class="filter-btn" data-filter="hardware">hardware</button>
+            <button class="filter-btn" data-filter="community">community</button>
+          </div>
+ 
+          <div class="projects-container">
+
+
+            <div id="project-blinky-angel" class="card" data-category="software">
+              <div class="card-text">
+                <h3>Blinky Angel</h3>
+                <p class="year">TensorFlow • ML • Javascript • Hackathon Win</p>
+                <p>A comprehensive Chrome extension designed to improve eye health through automated reminders and image recognition trained with a machine learning model. Most Innovative Human-Centred Design in AI Healthcare Award at Waterloo's 2025 Women in Engineering Hackathon.</p>
+                <a class="learn-more" href="https://devpost.com/software/blinky-angel?ref_content=user-portfolio&ref_feature=in_progress" target="_blank">Learn more</a>
+              </div>
+              <div class="card-image">
+                <img src="assets/blinky-angel.jpg" alt="Gold Tennis Academy">
+              </div>
+            </div>
+
+             <div id="project-posture-pal" class="card" data-category="software hardware">
+              <div class="card-text">
+                <h3>Posture Pal</h3>
+                <p class="year">Python • Arduino • ComputerVision • Firmware</p>
+                <p>Chiro is your robotic healthcare assistant that reminds you to improve your posture. Based on the Computer Vision model, Chiro receives signals of your posture, and its behaviour will change. </p>
+                <a class="learn-more" href="https://devpost.com/software/blinky-angel?ref_content=user-portfolio&ref_feature=in_progress" target="_blank">Learn more</a>
+              </div>
+              <div class="card-image">
+                <img src="assets/posture-pal1.jpg" alt="Gold Tennis Academy">
+              </div>
+            </div>
+
+            <div id="project-gold-tennis" class="card" data-category="software">
+              <div class="card-text">
+                <h3>Gold Tennis Academy</h3>
+                <p class="year">PHP • Laravel • MySQL • Tailwind</p>
+                <p>A full-stack booking system for my personal tennis coaching business. Allows admin and customers to manage lessons, bookings, and timeslots through their personal dashboards.</p>
+                <a class="learn-more" href="https://github.com/mynameisariel/gold-tennis" target="_blank">Learn more</a>
+              </div>
+              <div class="card-image">
+                <img src="assets/gold-tennis-academy.png" alt="Gold Tennis Academy">
+              </div>
+            </div>
+
+            <div class="card" data-category="software">
+              <div class="card-text">
+                <h3>Geomap</h3>
+                <p class="year">HTML • CSS • Javascript</p>
+                <p>An HTML, CSS, and Javascript web app that helps IBDP Geography students study the content material through an interactive map.</p>
+                <a class="learn-more" href="https://github.com/mynameisariel/geomap" target="_blank">Learn more</a>
+              </div>
+              <div class="card-image">
+                <img src="assets/geomap-home.jpg" alt="GeoMap">
+              </div>
+            </div>
+
+            <div class="card" data-category="community">
+              <div class="card-text">
+                <h3>LazyHacks</h3>
+                <p>A 15-hour high school hackathon that took place December 2024. 80 high school hackers from 25 schools across the city, 66% beginners, 95% attendance rate, 5 workshops hosted, $2000+ in STEM swag delivered. Only the laziest hack wins.</p>
+                <a class="learn-more" href="https://lazyhacks.github.io/lazyhacks-website/#" target="_blank">Learn more</a>
+              </div>
+              <div class="card-image">
+                <img src="assets/lazyhacks.JPG" alt="LazyHacks">
+              </div>
+            </div>
+ 
+            <div class="card" data-category="software">
+              <div class="card-text">
+                <h3>Planet365</h3>
+                <p class="year">Flutter • Dart</p>
+                <p>A sustainability and environmental awareness web app created with Flutter, allowing users to take small steps towards environmental activism every day.</p>
+                <a class="learn-more" href="https://github.com/mynameisariel/katy-youth-hacks-2023-planet365" target="_blank">Learn more</a>
+              </div>
+              <div class="card-image">
+                <img src="assets/planet365.png" alt="Planet365">
+              </div>
+            </div>
+
+ 
+            <div class="card" data-category="software">
+              <div class="card-text">
+                <h3>Climate Sprint</h3>
+                <p class="year">Kaboom JS • Javascript</p>
+                <p>A Javascript platformer game created with the Kaboom.js library for the LunarHacks III hackathon. This game aims to address SDG #13 (Climate Action) by raising awareness of the changing climate through varying game scenarios.</p>
+                <a class="learn-more" href="https://github.com/mynameisariel/climatesprint" target="_blank">Learn more</a>
+              </div>
+              <div class="card-image">
+                <img src="assets/climate-sprint-home.jpg" alt="Climate Sprint">
+              </div>
+            </div>
+
+            <div class="card" data-category="hardware community">
+              <div class="card-text">
+                <h3>Project GARY</h3>
+                <p>A youth-led initiative to reduce plastic litter, reaching 2000+ people in the community. GARY, a bamboo and rope model of a fish-shaped garbage encourages beachgoers to dispose responsibly of their waste.</p>
+              </div>
+              <div class="card-image">
+                <img src="assets/project-gary.JPG" alt="Project Gary">
+              </div>
+            </div>
+
+          </div>
+ 
+        </div>
+        
+      </section>
+
+</body>
+</html>
